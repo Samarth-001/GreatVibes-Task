@@ -3,7 +3,7 @@
 const styles = {
     headin: "text-2xl font-normal",
     paraline: "text-base font-normal",
-    placeholder: "text-[#7A7A7A] mb-5",
+    placeholderline: "text-[#7A7A7A] mb-5",
     fontnormal : "normal",
     fontheavy : "medium",
 
