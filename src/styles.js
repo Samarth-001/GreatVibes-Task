@@ -1,6 +1,8 @@
 // This contains all the styles as the variables and are passed inside the application
 
 const styles = {
+    headin: "text-2xl font-normal",
+    paraline: "text-base font-normal",
     fontnormal : "normal",
     fontheavy : "medium",
 

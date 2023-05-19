@@ -1,7 +1,8 @@
 import React from "react";
 import Button from "./utils/button";
 
-const card = ({styles,maxexp, minexp, minsalary, maxsalary, name, apply, buttoname}) => {
+const card = ({styles, maxexp, minexp, minsalary, maxsalary, name, apply, buttoname}) => {
+  console.log(styles.fontnormal)
   return (
     <>
       <div className="basis-1/2">
