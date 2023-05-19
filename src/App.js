@@ -9,7 +9,6 @@ function App() {
     <div className="App px-6">
       <div className="flex flex-wrap">
         {database.map((element) => {
-          console.log(element.buttoname)
           return (
             <Card styles={styles} name={element.name} minsalary={element.minsalary} maxsalary={element.maxsalary} minexp={element.minexp} maxexp={element.maxexp} apply={element.extapply} buttoname={element.buttoname}/>
           )
