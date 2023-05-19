@@ -39,8 +39,8 @@ function Form({styles}) {
       </section>
 
       {/* Submit Button */}
-      <div className="flex flex-row-reverse">
-        <div
+      <div className="flex flex-row-reverse mt-12">
+        <div className="mt-12"
           onClick={() => {
             if (section !== 1) {
               setSection((currPage) => currPage + 1);
