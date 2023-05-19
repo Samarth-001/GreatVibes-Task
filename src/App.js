@@ -1,23 +1,21 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import Card from "./components/card";
+import Form from "./components/form";
+import database from "./components/database/db";
+import styles from "./styles";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="App px-6">
+      <div className="flex flex-wrap">
+        {database.map((element) => {
+          console.log(element.buttoname)
+          return (
+            <Card styles={styles} name={element.name} minsalary={element.minsalary} maxsalary={element.maxsalary} minexp={element.minexp} maxexp={element.maxexp} apply={element.extapply} buttoname={element.buttoname}/>
+          )
+        })}
+      </div>
+      <Form styles={styles}/>
     </div>
   );
 }
