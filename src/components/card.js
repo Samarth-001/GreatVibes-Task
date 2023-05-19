@@ -1,6 +1,5 @@
 import React from "react";
 import Button from "./utils/button";
-import database from "./database/db";
 
 const card = ({styles,maxexp, minexp, minsalary, maxsalary, name, apply, buttoname}) => {
   return (
@@ -8,7 +7,7 @@ const card = ({styles,maxexp, minexp, minsalary, maxsalary, name, apply, buttona
       <div className="basis-1/2">
         <div className="flex flex-row bg-white mx-9 my-8 px-6 py-4 rounded-md">
           <div className="mr-2">
-            <img src="/Netflix-logo.png" alt="image" />
+            <img src="/Netflix-logo.png" alt="logo" />
           </div>
           <div className="text-left">
             <h1 className={`text-${styles.textbig} font-${styles.fontnormal}`}>{name}</h1>
