@@ -42,7 +42,7 @@ function Form({styles}) {
       <div className="flex flex-row-reverse">
         <div
           onClick={() => {
-            if (section != 1) {
+            if (section !== 1) {
               setSection((currPage) => currPage + 1);
             } else {
               handleSubmit();
